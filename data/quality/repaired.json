@@ -1,0 +1,34 @@
+{
+  "report_name": "repaired",
+  "timestamp": "2026-08-06T05:51:47.181987+00:00",
+  "total_rows": 24,
+  "passed": true,
+  "checks": {
+    "row_count": {
+      "passed": true,
+      "count": 24
+    },
+    "paper_id_not_null": {
+      "passed": true,
+      "null_or_empty_count": 0
+    },
+    "paper_id_unique": {
+      "passed": true,
+      "duplicate_count": 0
+    },
+    "title_not_null": {
+      "passed": true,
+      "null_or_empty_count": 0
+    },
+    "summary_valid": {
+      "passed": true,
+      "empty_count": 0,
+      "avg_character_length": 1698.38
+    },
+    "freshness": {
+      "passed": true,
+      "stale_rows": 0,
+      "threshold_days": 180
+    }
+  }
+}
