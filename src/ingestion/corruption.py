@@ -65,12 +65,23 @@ def _record_ids(df: pd.DataFrame, indexes: list[Any]) -> list[str]:
 def _rebuild_text_for_embedding(df: pd.DataFrame) -> None:
     """Rebuild embedding input after corrupting fields used by retrieval."""
 
-    optional_fields = [column for column in ("authors_joined", "categories_joined") if column in df]
-
     def build_text(row: pd.Series) -> str:
-        parts = [str(row.get("title", "") or ""), str(row.get("summary", "") or "")]
-        parts.extend(str(row.get(column, "") or "") for column in optional_fields)
-        return "\n".join(part.strip() for part in parts if part.strip())
+        fields = (
+            ("Title", "title"),
+            ("Summary", "summary"),
+            ("Authors", "authors_joined"),
+            ("Categories", "categories_joined"),
+            ("Published", "published"),
+        )
+        parts: list[str] = []
+        for label, column in fields:
+            if column not in df:
+                continue
+            value = row.get(column, "")
+            if pd.isna(value) or not str(value).strip():
+                continue
+            parts.append(f"{label}: {str(value).strip()}")
+        return "\n".join(parts)
 
     df["text_for_embedding"] = df.apply(build_text, axis=1)
 

@@ -29,7 +29,10 @@ def clean_df() -> pd.DataFrame:
                 "authors_joined": "Ada, Linus",
                 "categories_joined": "AI, RAG",
                 "summary_chars": len(summary),
-                "text_for_embedding": f"{title}\n{summary}\nAda, Linus\nAI, RAG",
+                "text_for_embedding": (
+                    f"Title: {title}\nSummary: {summary}\nAuthors: Ada, Linus\n"
+                    f"Categories: AI, RAG\nPublished: 2026-01-{index + 1:02d}"
+                ),
             }
         )
     return pd.DataFrame(rows)
@@ -89,10 +92,4 @@ def test_zero_fractions_leave_content_unchanged(clean_df, tmp_path):
     result = corrupt_clean_dataframe(clean_df, tmp_path / "log.json", config)
     expected = clean_df.copy()
     # Corruption owns the canonical rebuild of this derived field.
-    expected["text_for_embedding"] = expected.apply(
-        lambda row: "\n".join(
-            [row["title"], row["summary"], row["authors_joined"], row["categories_joined"]]
-        ),
-        axis=1,
-    )
     pd.testing.assert_frame_equal(result, expected)

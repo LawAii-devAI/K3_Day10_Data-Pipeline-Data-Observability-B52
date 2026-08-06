@@ -7,8 +7,13 @@ from .corruption import (
 )
 
 __all__ = [
+    "PaperRecord",
     "CorruptionConfig",
+    "build_clean_dataframe",
     "corrupt_clean_dataframe",
+    "fetch_source_records",
+    "load_raw_records",
+    "parse_crossref_payload",
     "repair_clean_dataframe",
     "validate_repaired_dataframe",
 ]
