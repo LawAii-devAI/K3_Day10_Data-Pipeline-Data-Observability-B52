@@ -6,20 +6,20 @@
 
 | Thông tin         | Nội dung                  |
 | ------------------ | -------------------------- |
-| Khóa/Lớp         | [K3 hoặc K4]              |
-| Tên nhóm         | [Tên hoặc mã nhóm]     |
-| Repository         | [Đường dẫn repository] |
-| Ngày hoàn thành | [YYYY-MM-DD]               |
+| Khóa/Lớp         | K3             |
+| Tên nhóm         | B52     |
+| Repository         | https://github.com/LawAii-devAI/K3_Day10_Data-Pipeline-Data-Observability-B52 |
+| Ngày hoàn thành | 06/08/2026               |
 
 ### Thành viên và phân công
 
 | STT | Họ và tên | MSSV | Vai trò chính | Module/deliverable sở hữu |
 | --: | --- | --- | --- | --- |
-| 1 | [Họ tên] | [MSSV] | [Vai trò] | [File, hàm hoặc artifact] |
-| 2 | [Họ tên] | [MSSV] | [Vai trò] | [File, hàm hoặc artifact] |
-| 3 | [Họ tên] | [MSSV] | [Vai trò] | [File, hàm hoặc artifact] |
-| 4 | [Nếu có] | [MSSV] | [Vai trò] | [File, hàm hoặc artifact] |
-| 5 | [Nếu có] | [MSSV] | [Vai trò] | [File, hàm hoặc artifact] |
+| 1 | Nguyễn Văn An | 2A202601817 | Source Ingestion | `src/ingestion/crossref.py`, `data/raw/` |
+| 2 | Đào Trung Hiếu | 2A202601059 | Cleaning & Test set | `src/ingestion/cleaning.py`, `src/evaluation/testset.py` |
+| 3 | Phạm Thái Sơn | 2A202601984 | Observability & Reporting | `src/observability/quality.py`, `reporting.py` |
+| 4 | Nguyễn Trọng Đức | 2A202601673 | Corruption & Repair | `src/ingestion/corruption.py` |
+| 5 | Nguyễn Trung Hiếu | 2A202601457 | Integration & Comparison | `src/pipelines/phase1.py`, `corruption_flow.py` |
 
 ## 2. Tóm tắt kết quả
 

@@ -127,7 +127,7 @@ Repair thành công khi:
 
 ---
 
-## 8. Phân tích kết quả
+## 6. Phân tích kết quả
 
 ### Metrics chính
 
