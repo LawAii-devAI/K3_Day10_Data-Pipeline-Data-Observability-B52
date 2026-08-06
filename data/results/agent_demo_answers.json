@@ -1,0 +1,14 @@
+[
+  {
+    "question": "What is the summary of the paper 'JADE-Plus: A Multimodal Agentic Retrieval-Augmented Generation Large Language Framework for Diagnostic Support in Jawbone Lesions: Development and Technical Validation Study'?",
+    "answer": "The paper titled \"JADE-Plus: A Multimodal Agentic Retrieval-Augmented Generation Large Language Framework for Diagnostic Support in Jawbone Lesions: Development and Technical Validation Study\" focuses on the challenges of diagnosing jawbone lesions in oral and maxillofacial radiology, particularly due to overlapping radiological features and the necessity for integrated clinical reasoning. \n\nThe study introduces JADE-Plus, a novel multimodal framework designed for diagnostic decision support in assessing jawbone lesions. This cloud-based, tablet-optimized system incorporates a vision-language model (VLM) for analyzing panoramic radiographs, a knowledge-grounded retrieval-augmented generation (RAG) module, and an agentic verification loop for diagnostic fusion and re-ranking.\n\nJADE-Plus was evaluated using 40 representative cases of jawbone lesions and compared against other models, including JADE, GPT-5.4, GPT-5.4 VLM, and ORAD. The performance metrics included Top-1 and Top-3 accuracy, ablation and statistical analyses, intra-model stability, and response time. The results showed that JADE-Plus achieved the highest diagnostic performance, with a Top-1 accuracy of 90% and a Top-3 accuracy of 100%, indicating no missed diagnoses. Statistical tests revealed significant differences in performance among the models evaluated. \n\nThe authors of the study are Soroush Baseri Saadi, Jonas Ver Berne, Rocharles Cavalcante Fontenele, Peter Claes, and Reinhilde Jacobs, and it was published on July 13, 2026."
+  },
+  {
+    "question": "Who authored the paper 'JADE-Plus: A Multimodal Agentic Retrieval-Augmented Generation Large Language Framework for Diagnostic Support in Jawbone Lesions: Development and Technical Validation Study'?",
+    "answer": "The paper titled \"JADE-Plus: A Multimodal Agentic Retrieval-Augmented Generation Large Language Framework for Diagnostic Support in Jawbone Lesions: Development and Technical Validation Study\" was authored by Soroush Baseri Saadi, Jonas Ver Berne, Rocharles Cavalcante Fontenele, Peter Claes, and Reinhilde Jacobs."
+  },
+  {
+    "question": "When was the paper 'JADE-Plus: A Multimodal Agentic Retrieval-Augmented Generation Large Language Framework for Diagnostic Support in Jawbone Lesions: Development and Technical Validation Study' published?",
+    "answer": "The paper titled \"JADE-Plus: A Multimodal Agentic Retrieval-Augmented Generation Large Language Framework for Diagnostic Support in Jawbone Lesions: Development and Technical Validation Study\" was published on July 13, 2026."
+  }
+]

@@ -1,0 +1,100 @@
+{
+  "generated_at": "2026-08-06T05:50:24.724955+00:00",
+  "seed": 42,
+  "input_rows": 24,
+  "output_rows": 23,
+  "config": {
+    "seed": 42,
+    "latest_fraction": 0.15,
+    "blank_summary_fraction": 0.2,
+    "noisy_summary_fraction": 0.2,
+    "truncated_title_fraction": 0.2,
+    "stale_date_fraction": 0.2,
+    "duplicate_fraction": 0.15,
+    "stale_days": 730,
+    "title_max_chars": 18,
+    "noise_marker": " [CORRUPTED_NOISE] xqzv 000 ???"
+  },
+  "scenarios": [
+    {
+      "type": "drop_latest_records",
+      "count": 4,
+      "record_ids": [
+        "10.2118/234689-pa",
+        "10.1007/s10278-026-02086-9",
+        "10.21203/rs.3.rs-10178277/v1",
+        "10.2196/preprints.106157"
+      ],
+      "parameters": {
+        "fraction": 0.15
+      }
+    },
+    {
+      "type": "blank_summary",
+      "count": 4,
+      "record_ids": [
+        "10.22214/ijraset.2026.82233",
+        "10.21203/rs.3.rs-9882260/v1",
+        "10.20944/preprints202602.0996.v1",
+        "10.20944/preprints202604.0339.v1"
+      ],
+      "parameters": {
+        "fraction": 0.2
+      }
+    },
+    {
+      "type": "inject_summary_noise",
+      "count": 4,
+      "record_ids": [
+        "10.70121/001c.158711",
+        "10.20944/preprints202604.0339.v1",
+        "10.22214/ijraset.2026.82233",
+        "10.1111/exsy.70341"
+      ],
+      "parameters": {
+        "fraction": 0.2,
+        "noise_marker": " [CORRUPTED_NOISE] xqzv 000 ???"
+      }
+    },
+    {
+      "type": "truncate_title",
+      "count": 4,
+      "record_ids": [
+        "10.55041/isjem07213",
+        "10.36227/techrxiv.177272838.89432844/v1",
+        "10.20944/preprints202602.0996.v1",
+        "10.1111/exsy.70341"
+      ],
+      "parameters": {
+        "fraction": 0.2,
+        "max_chars": 18
+      }
+    },
+    {
+      "type": "stale_published_date",
+      "count": 4,
+      "record_ids": [
+        "10.21079/11681/50309",
+        "10.63646/kpqm1958",
+        "10.21203/rs.3.rs-10012178/v1",
+        "10.21203/rs.3.rs-9770645/v1"
+      ],
+      "parameters": {
+        "fraction": 0.2,
+        "days_subtracted": 730
+      }
+    },
+    {
+      "type": "duplicate_rows",
+      "count": 3,
+      "record_ids": [
+        "10.21203/rs.3.rs-9770645/v1",
+        "10.20944/preprints202604.0339.v1",
+        "10.35314/3y9hy151"
+      ],
+      "parameters": {
+        "fraction": 0.15
+      }
+    }
+  ]
+}
