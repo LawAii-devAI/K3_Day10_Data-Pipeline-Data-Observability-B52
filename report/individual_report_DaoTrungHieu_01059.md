@@ -4,10 +4,10 @@
 
 | Thông tin | Nội dung |
 | --- | --- |
-| Họ và tên | [Điền họ và tên] |
-| MSSV | [Điền MSSV] |
+| Họ và tên | Đào Trung Hiếu |
+| MSSV | 2A202601059 |
 | Khóa/Lớp | K3 |
-| Tên nhóm | [Điền tên hoặc mã nhóm] |
+| Tên nhóm | B5-2 |
 | Vai trò chính | Thành viên 2 — Cleaning & test-set owner |
 | Repository | `D:\K3_Day10_Data-Pipeline-Data-Observability-B52` |
 | Ngày hoàn thành | 2026-08-06 |
